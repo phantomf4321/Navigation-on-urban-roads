@@ -6,7 +6,7 @@ from functools import reduce
 client = ors.Client(key='')
 
 m = folium.Map(location=list(reversed([59.51120108401389, 36.31167174706367])), tiles="Cartodb dark_matter", zoom_start=13)
-# white house to the pentagon
+
 coords = [[59.51120108401389, 36.31167174706367], [59.61310468013571, 36.291125254657985]]
 
 route = client.directions(coordinates=coords,
